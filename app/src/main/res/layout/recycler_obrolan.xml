@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingStart="20dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/img_user"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY"
+        app:sriv_left_bottom_corner_radius="50dp"
+        app:sriv_left_top_corner_radius="50dp"
+        app:sriv_right_bottom_corner_radius="50dp"
+        app:sriv_right_top_corner_radius="50dp" />
+
+    <TextView
+        android:id="@+id/txt_nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/img_user"
+        android:letterSpacing="0.04"
+        android:textColor="#b3000000"
+        android:textSize="12sp"
+        tools:text="Dicky Indrayan S" />
+
+    <TextView
+        android:id="@+id/txt_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/txt_nama_user"
+        android:letterSpacing="0.04"
+        android:textColor="#47c796"
+        android:textSize="10sp"
+        tools:text="5 Okt" />
+
+    <TextView
+        android:id="@+id/txt_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nama_user"
+        android:layout_toEndOf="@id/img_user"
+        android:letterSpacing="0.04"
+        android:textColor="#61000000"
+        android:textSize="12sp"
+        tools:text="Ada harga potongan untuk pembelian?" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_arrow" />
+
+</RelativeLayout>
